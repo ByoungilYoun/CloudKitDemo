@@ -11,8 +11,8 @@ import SwiftData
 @Model
 final class Entry {
   var id: UUID = UUID()
-  var title: String
-  var details: String
+  var title: String = ""
+  var details: String = ""
   
   init(title: String, details: String) {
     self.title = title
