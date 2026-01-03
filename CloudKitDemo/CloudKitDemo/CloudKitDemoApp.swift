@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct CloudKitDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .modelContainer(for: Entry.self)
         }
     }
 }
